@@ -14,7 +14,7 @@ db.recipes.insertMany([
             },
             {
                 "name": "Cheese",
-                "qty": "150g"
+                "qty": "150g Grated"
             },
             {
                 "name": "Flour",
@@ -25,13 +25,24 @@ db.recipes.insertMany([
                 "qty": "2 tbspn"
             },
             {
+                "name": "Mustard",
+                "qty": "2 tspn"
+            },
+            {
                 "name": "Pasta",
                 "qty": "150g"
             }
+        ],
+        "steps":[
+            "Step 1. In a saucepan bring water with some salt to the boil, add the pasta and cook for 10-12 minutes, stirring occasionally or until aldente.  Set oven to 180 degrees celsius",
+            "Step 2. Heat the milk in the microwave.  Melt the butter in a saucepan untill bubbling, then add flour and beat into a paste, continuously stir and cook for 5-6 minutes on a low to medium heat ensuring not to burn the paste this is called a Roux.",
+            "Step 3. Add the milk to the roux gradually, stirring as you go, until you get a smooth sauce. Cook for 5-10 mins, stirring continuously, until the sauce has thickened. Add Cheese and Mustard to taste.",
+            "Step 4. Drain the pasta and add to the sauce, mixing well.  Transfere to an oven proof dish and sprinkle some extra grated cheese on top.  Cook for 8-10 minutes or until golden brown on top.",
+            "Step 5. Serve in warmed bowls and enjoy!"
         ]
     },
     {
-        "name": "Spag Bol",
+        "name": "Spaghetti Bolognese",
         "ingredients": [
             {
                 "name": "Pasta",
@@ -69,6 +80,13 @@ db.recipes.insertMany([
                 "name": "Parmasan",
                 "qty": "50g"
             }
+        ],
+        "steps":[
+            "Step 1. In a saucepan bring water with some salt to the boil, add the pasta and cook for 10-12 minutes, stirring occasionally or until aldente.  Set oven to 180 degrees celsius",
+            "Step 2. Heat the milk in the microwave.  Melt the butter in a saucepan untill bubbling, then add flour and beat into a paste, continuously stir and cook for 5-6 minutes on a low to medium heat ensuring not to burn the paste this is called a Roux.",
+            "Step 3. Add the milk to the roux gradually, stirring as you go, until you get a smooth sauce. Cook for 5-10 mins, stirring continuously, until the sauce has thickened. Add Cheese and Mustard to taste.",
+            "Step 4. Drain the pasta and add to the sauce, mixing well.  Transfere to an oven proof dish and sprinkle some extra grated cheese on top.  Cook for 8-10 minutes or until golden brown on top.",
+            "Step 5. Serve in warmed bowls and enjoy!"
         ]
     },
     {
@@ -78,6 +96,13 @@ db.recipes.insertMany([
                 "name": "Pizza",
                 "qty": "1"
             }
+        ],
+        "steps":[
+            "Step 1. In a saucepan bring water with some salt to the boil, add the pasta and cook for 10-12 minutes, stirring occasionally or until aldente.  Set oven to 180 degrees celsius",
+            "Step 2. Heat the milk in the microwave.  Melt the butter in a saucepan untill bubbling, then add flour and beat into a paste, continuously stir and cook for 5-6 minutes on a low to medium heat ensuring not to burn the paste this is called a Roux.",
+            "Step 3. Add the milk to the roux gradually, stirring as you go, until you get a smooth sauce. Cook for 5-10 mins, stirring continuously, until the sauce has thickened. Add Cheese and Mustard to taste.",
+            "Step 4. Drain the pasta and add to the sauce, mixing well.  Transfere to an oven proof dish and sprinkle some extra grated cheese on top.  Cook for 8-10 minutes or until golden brown on top.",
+            "Step 5. Serve in warmed bowls and enjoy!"
         ]
     },
     {
@@ -111,6 +136,13 @@ db.recipes.insertMany([
                 "name": "Mushrooms",
                 "qty": "125g"
             }
+        ],
+        "steps":[
+            "Step 1. In a saucepan bring water with some salt to the boil, add the pasta and cook for 10-12 minutes, stirring occasionally or until aldente.  Set oven to 180 degrees celsius",
+            "Step 2. Heat the milk in the microwave.  Melt the butter in a saucepan untill bubbling, then add flour and beat into a paste, continuously stir and cook for 5-6 minutes on a low to medium heat ensuring not to burn the paste this is called a Roux.",
+            "Step 3. Add the milk to the roux gradually, stirring as you go, until you get a smooth sauce. Cook for 5-10 mins, stirring continuously, until the sauce has thickened. Add Cheese and Mustard to taste.",
+            "Step 4. Drain the pasta and add to the sauce, mixing well.  Transfere to an oven proof dish and sprinkle some extra grated cheese on top.  Cook for 8-10 minutes or until golden brown on top.",
+            "Step 5. Serve in warmed bowls and enjoy!"
         ]
     },
     {
@@ -136,6 +168,13 @@ db.recipes.insertMany([
                 "name": "Frozen Chips",
                 "qty": "400g"
             }
+        ],
+        "steps":[
+            "Step 1. In a saucepan bring water with some salt to the boil, add the pasta and cook for 10-12 minutes, stirring occasionally or until aldente.  Set oven to 180 degrees celsius",
+            "Step 2. Heat the milk in the microwave.  Melt the butter in a saucepan untill bubbling, then add flour and beat into a paste, continuously stir and cook for 5-6 minutes on a low to medium heat ensuring not to burn the paste this is called a Roux.",
+            "Step 3. Add the milk to the roux gradually, stirring as you go, until you get a smooth sauce. Cook for 5-10 mins, stirring continuously, until the sauce has thickened. Add Cheese and Mustard to taste.",
+            "Step 4. Drain the pasta and add to the sauce, mixing well.  Transfere to an oven proof dish and sprinkle some extra grated cheese on top.  Cook for 8-10 minutes or until golden brown on top.",
+            "Step 5. Serve in warmed bowls and enjoy!"
         ]
     },
     {
@@ -181,6 +220,13 @@ db.recipes.insertMany([
                 "name": "Eggs",
                 "qty": "4"
             }
+        ],
+        "steps":[
+            "Step 1. In a saucepan bring water with some salt to the boil, add the pasta and cook for 10-12 minutes, stirring occasionally or until aldente.  Set oven to 180 degrees celsius",
+            "Step 2. Heat the milk in the microwave.  Melt the butter in a saucepan untill bubbling, then add flour and beat into a paste, continuously stir and cook for 5-6 minutes on a low to medium heat ensuring not to burn the paste this is called a Roux.",
+            "Step 3. Add the milk to the roux gradually, stirring as you go, until you get a smooth sauce. Cook for 5-10 mins, stirring continuously, until the sauce has thickened. Add Cheese and Mustard to taste.",
+            "Step 4. Drain the pasta and add to the sauce, mixing well.  Transfere to an oven proof dish and sprinkle some extra grated cheese on top.  Cook for 8-10 minutes or until golden brown on top.",
+            "Step 5. Serve in warmed bowls and enjoy!"
         ]
     }
 ])
