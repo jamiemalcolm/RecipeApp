@@ -26,12 +26,17 @@ const RecipeItem = ({recipe, index}) => {
     return (
         <div>
             <List >
-                <ListItem button divider  style={{width: '50%'}}> < Typography onClick={handleRecipeClick} variant="subtitle1">{`  ${recipe.name}  `}</Typography>  { showDetails && <Button color="primary" size="small" style={{marginLeft: 10}} variant="contained" onClick={handleMakeMeButtonClick}> Make Me! 🍳  </Button>} </ListItem>
+                <ListItem button divider  style={{width: '50%'}}>
+                    < Typography onClick={handleRecipeClick} variant="subtitle1">
+                        {`  ${recipe.name}  `}
+                    </Typography> 
+                    { showDetails && <Button color="primary" size="small" style={{marginLeft: 10}} variant="contained" onClick={handleMakeMeButtonClick}>
+                        Make Me! 🍳 
+                    </Button>}
+                </ListItem>
             </List>
                 <List style={{display:'flex', justifyItems:'space-between'}}>
                     {showDetails && <RecipeDetails recipe={recipe} index={index} key={index}/>}
-                {/* </List>
-                <List> */}
                     {showSteps && <RecipieSteps recipe={recipe}/>}
                 </List>
         </div>
