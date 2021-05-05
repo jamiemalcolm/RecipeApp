@@ -11,6 +11,7 @@ const HomePage = ({ generateMenu, newMenu }) => {
         <div>
             <Grid justify="center">
                 <Grid
+                style={{margin: 10}}
                 item
                 component={Typography}
                 variant="h3"
@@ -22,6 +23,7 @@ const HomePage = ({ generateMenu, newMenu }) => {
 
                 <Grid
                     item
+                    style={{margin: 15}}
                     component={Button}
                     color="primary"
                     size="large"
