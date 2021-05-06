@@ -19,12 +19,11 @@ const GenerateMenu = ({ generateMenu }) => {
     return (
         <div>
             <Container maxwidth="sm">
-
                 <form preventDefault onSubmit={handleOnSubmit}>
-                    <Grid container spacing={12}>
-                        <Grid item xs={12}>
+                    <Grid container justify="center" spacing={10}>
+                        <Grid item xs={5}>
                             <InputLabel>Number of days</InputLabel>
-                            <Select required onChange={handleOnChange} name="numberOfDays" label="Number of days planning for" >
+                            <Select defaultValue="Days" required onChange={handleOnChange} name="numberOfDays" label="Number of days planning for" >
                                 <MenuItem value={1}>One</MenuItem>
                                 <MenuItem value={2}>Two</MenuItem>
                                 <MenuItem value={3}>Three</MenuItem>
@@ -36,7 +35,6 @@ const GenerateMenu = ({ generateMenu }) => {
                         </Grid>
                         <Button
                             type="submit"
-                            fullWidth
                             cariant="contained"
                             color="primary"
                         >
