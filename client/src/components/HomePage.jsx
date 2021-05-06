@@ -1,43 +1,42 @@
 import { Button, Grid, List, ListItem, Typography } from '@material-ui/core'
-import React from 'react'
+import React,{useState} from 'react'
+import GenerateMenu from './GenerateMenu';
 import RecipeItem from './RecipeItem';
 
-const HomePage = ({ generateMenu, newMenu }) => {
+const HomePage = ({recipeData}) => {
 
-    const menuNodes = newMenu.map((recipe, index) => {
+    const [generatedMenu, setGeneratedMenu] = useState([]);
+
+    const menuNodes = generatedMenu.map((recipe, index) => {
         return <RecipeItem key={recipe._id} index={index + 1} recipe={recipe}></RecipeItem>
     })
+
+    const generateMenu = (days) => {
+        let randomNums = [];
+        let menuLength = days;
+        let max = recipeData.length
+        for(let i=0; randomNums.length < menuLength; i++){
+            let recipeNum = Math.floor(Math.random() * (max - 0) + 0);
+            if(!randomNums.includes(recipeNum)){
+                randomNums.push(recipeNum)
+                console.log(recipeNum);
+            }
+        }
+        let newMenu = randomNums.map((number) => {
+            return recipeData[number]
+        })
+        setGeneratedMenu(newMenu)
+        console.log(generatedMenu)
+    }
     return (
         <div>
-            <Grid justify="center">
-                <Grid
-                style={{margin: 10}}
-                item
-                component={Typography}
-                variant="h3"
-                
-                >
-                    Click the button to Generate a menu for 5 days.
-                </Grid>
-                    <br/>
-
-                <Grid
-                    item
-                    style={{margin: 15}}
-                    component={Button}
-                    color="primary"
-                    size="large"
-                    variant="contained"
-                    onClick={generateMenu}
-                >
-                    Generate Menu
-                </Grid>
+                <GenerateMenu generateMenu={generateMenu}/>
                 <Grid>
                     <List>
-                        {newMenu && menuNodes}
+                        {generatedMenu && menuNodes}
                     </List>
                 </Grid>
-            </Grid>
+            
         </div>
     )
 }
