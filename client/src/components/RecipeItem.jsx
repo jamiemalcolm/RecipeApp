@@ -1,4 +1,4 @@
-import { Button, Divider, List, ListItem, Typography } from '@material-ui/core';
+import { Button, List, ListItem, Typography } from '@material-ui/core';
 import React, {useState} from 'react'
 import RecipeDetails from './RecipeDetails';
 import RecipieSteps from './RecipieSteps';

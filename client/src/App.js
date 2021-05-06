@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import RecipesContainer from './containers/RecipesContainer'
-import { Button } from '@material-ui/core'
 import './App.css'; import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavDrawer from './components/NavDrawer';
 import HomePage from './components/HomePage';

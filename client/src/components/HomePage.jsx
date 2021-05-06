@@ -1,9 +1,9 @@
-import { Button, Grid, List, ListItem, Typography } from '@material-ui/core'
-import React,{useState} from 'react'
+import { Divider, Grid, List, Typography } from '@material-ui/core'
+import React, { useState } from 'react'
 import GenerateMenu from './GenerateMenu';
 import RecipeItem from './RecipeItem';
 
-const HomePage = ({recipeData}) => {
+const HomePage = ({ recipeData }) => {
 
     const [generatedMenu, setGeneratedMenu] = useState([]);
 
@@ -15,9 +15,9 @@ const HomePage = ({recipeData}) => {
         let randomNums = [];
         let menuLength = days;
         let max = recipeData.length
-        for(let i=0; randomNums.length < menuLength; i++){
+        for (let i = 0; randomNums.length < menuLength; i++) {
             let recipeNum = Math.floor(Math.random() * (max - 0) + 0);
-            if(!randomNums.includes(recipeNum)){
+            if (!randomNums.includes(recipeNum)) {
                 randomNums.push(recipeNum)
                 console.log(recipeNum);
             }
@@ -30,13 +30,19 @@ const HomePage = ({recipeData}) => {
     }
     return (
         <div>
-                <GenerateMenu generateMenu={generateMenu}/>
-                <Grid>
-                    <List>
-                        {generatedMenu && menuNodes}
-                    </List>
-                </Grid>
-            
+            <Grid>
+                <Typography style={{textAlign:'center'}} component="h1" variant="h5">
+                    Select number of days and generate a menu.
+                </Typography>
+                <Divider style={{margin:10}}></Divider>
+            </Grid>
+            <GenerateMenu generateMenu={generateMenu} />
+            <Grid>
+                <List>
+                    {generatedMenu && menuNodes}
+                </List>
+            </Grid>
+
         </div>
     )
 }

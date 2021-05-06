@@ -1,4 +1,4 @@
-import { Divider, ListItem } from '@material-ui/core'
+import {  ListItem } from '@material-ui/core'
 import React from 'react'
 
 const RecipeDetails = ({ recipe }) => {
