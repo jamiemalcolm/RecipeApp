@@ -8,10 +8,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## To preview the App.
 
+### ensure you have npm and mongodb installed on your machine.
+
 ### first
 
 Open the server directory inside the terminal and run:
 
+### `npm install`
+
+then
 ### `npm run seeds`
 
 then
@@ -22,6 +27,9 @@ then
 
 open the  Client Directory inside the terminal and run:
 
+### `npm install`
+
+then
 ### `npm start`
 
 ## Go to http://localhost:3000 to preview the App.... Happy cooking!
