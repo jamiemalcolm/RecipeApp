@@ -228,8 +228,69 @@ db.recipes.insertMany([
             "Step 4. Drain the pasta and add to the sauce, mixing well.  Transfere to an oven proof dish and sprinkle some extra grated cheese on top.  Cook for 8-10 minutes or until golden brown on top.",
             "Step 5. Serve in warmed bowls and enjoy!"
         ]
+    },{
+        "name": "Baked Chicken Arrabbiata",
+        "ingredients":[
+            {
+            "name":"Chicken Legs",
+            "qty": 2
+            },
+            {
+                "name":"Sliced Red Onion",
+                "qty": 1
+            },
+            {
+                "name":"Sliced Red Pepper",
+                "qty": 1
+            },
+            {
+                "name":"Cruchsed Garlic Cloves",
+                "qty": 1
+            },
+            {
+                "name":"Chopped tomatoes",
+                "qty": 1
+            },
+            {
+                "name":"Spinach",
+                "qty": "200g"
+            },
+            {
+                "name":"Chicken Stock",
+                "qty": "75ml"
+            },
+            {
+                "name":"White Wine",
+                "qty": "100ml"
+            },
+            {
+                "name":"Chilli Flakes",
+                "qty": "0.5tspn"
+            },
+            {
+                "name":"Oregano",
+                "qty": "1tspn"
+            },
+            {
+                "name":"Pinch of Sugar",
+                "qty": 1
+            },
+            {
+                "name":"Pasta",
+                "qty": "150g"
+            },
+        ],
+        "steps":[
+            "Step 1. Heat the oevn to 200 degrees/180 fan. Heat the oil in frying pan. Season the chicken and fry skin down for 5 minutes until golden, remove and set aside.",
+            "Step 2. Fry the onion and pepper in pan for 10 minutes, add the chilli and garlic. Pour in the wine, then simmer for a few minutes until reduced. Tip in tomatoes, oregano, stock, spinach and sugar. Bring to a simmer and cook for 10 minutes. Season",
+            "Step 3. Pour the sauce into a roasting tin. Nestle the chicken and bake for 35-40 minutes until cooked through. Cook the pasta and serve with the chicken and extra oregano. Bon appetito"
+        ]
     }
 ])
+
+
+
+
 
 // {
 //     "name":"Mac and Cheese",
