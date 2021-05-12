@@ -1,12 +1,12 @@
 import React from 'react'
-import AddRecipeForm from '../components/AddRecipeForm'
+import RecipeForm from '../components/RecipeForm'
+
 
 const FormContainer = () => {
     return (
         <div>
-            The form page
-
-            <AddRecipeForm/>
+            <RecipeForm/>
+            
         </div>
     )
 }
