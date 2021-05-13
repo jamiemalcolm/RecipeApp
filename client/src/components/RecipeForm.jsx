@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
 import RemoveIcon from '@material-ui/icons/Remove';
 import AddIcon from '@material-ui/icons/Add';
+import Request from '../helpers/request';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -55,9 +56,11 @@ const RecipeForm = () => {
         {
             name: recipeName,
             ingredients: ingredients,
-            steps: steps.map((step) => Object.values(step))
+            steps: [].concat(...steps.map((step) => Object.values(step)))
         }
         setRecipe(recipeToSave)
+        const request = new Request()
+        request.post("http://localhost:8080/api/recipes", recipe)
         console.log(recipe);
     }
 
