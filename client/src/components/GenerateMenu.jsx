@@ -1,8 +1,32 @@
 import React, { useState } from 'react'
 import { Select, MenuItem, Button, Grid, Container, InputLabel } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        '& .MuiFormLabel-root ': {
+            color: '#DCF763'
+        },
+        '& .MuiSelect-root':{
+            color: '#DCF763'
+        },
+        '& .MuiButtonBase-root':{
+                color: '#DCF763',
+        },
+        '& .MuiButton-root': {
+            borderRadius:'200px'
+        }
+
+    },
+    button: {
+        margin: theme.spacing(0.5)
+    }
+
+}))
 
 const GenerateMenu = ({ generateMenu }) => {
-
+    
+    const classes = useStyles()
 
     const [numOfDays, setNumOfDays] = useState();
 
@@ -18,11 +42,11 @@ const GenerateMenu = ({ generateMenu }) => {
 
     return (
         <div>
-            <Container maxwidth="sm">
+            <Container className={classes.root} maxwidth="sm">
                 <form preventDefault onSubmit={handleOnSubmit}>
                     <Grid container justify="center" spacing={10}>
                         <Grid item xs={5}>
-                            <InputLabel>Number of days</InputLabel>
+                            <InputLabel >Number of days</InputLabel>
                             <Select defaultValue="Days" required onChange={handleOnChange} name="numberOfDays" label="Number of days planning for" >
                                 <MenuItem value={1}>One</MenuItem>
                                 <MenuItem value={2}>Two</MenuItem>

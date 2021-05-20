@@ -3,7 +3,9 @@ import React, { useState } from 'react'
 import GenerateMenu from './GenerateMenu';
 import RecipeItem from './RecipeItem';
 
+
 const HomePage = ({ recipeData }) => {
+
 
     const [generatedMenu, setGeneratedMenu] = useState([]);
 
