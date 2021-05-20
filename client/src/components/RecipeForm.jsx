@@ -61,7 +61,6 @@ const RecipeForm = () => {
         setRecipe(recipeToSave)
         const request = new Request()
         request.post("http://localhost:8080/api/recipes", recipe)
-        console.log(recipe);
     }
 
     const handleAddIngredient = () => {

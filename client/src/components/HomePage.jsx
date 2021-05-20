@@ -19,14 +19,12 @@ const HomePage = ({ recipeData }) => {
             let recipeNum = Math.floor(Math.random() * (max - 0) + 0);
             if (!randomNums.includes(recipeNum)) {
                 randomNums.push(recipeNum)
-                console.log(recipeNum);
             }
         }
         let newMenu = randomNums.map((number) => {
             return recipeData[number]
         })
         setGeneratedMenu(newMenu)
-        console.log(generatedMenu)
     }
     return (
         <div>
