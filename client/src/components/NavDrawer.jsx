@@ -17,6 +17,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import HomeIcon from '@material-ui/icons/Home';
 import DescriptionIcon from '@material-ui/icons/Description';
+import LibraryAddIcon from '@material-ui/icons/LibraryAdd';
 import { Link } from 'react-router-dom';
 
 const drawerWidth = 240;
@@ -151,6 +152,13 @@ export default function PersistentDrawerRight() {
                         to="/recipes">
                         <ListItemIcon>{<DescriptionIcon />}</ListItemIcon>
                         <ListItemText>Recipes</ListItemText>
+                    </ListItem>
+                    <ListItem
+                        button
+                        component={Link}
+                        to="/add-recipe">
+                        <ListItemIcon>{<LibraryAddIcon />}</ListItemIcon>
+                        <ListItemText>Add New Recipe</ListItemText>
                     </ListItem>
                 </List>
 
