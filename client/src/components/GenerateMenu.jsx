@@ -8,18 +8,22 @@ const useStyles = makeStyles((theme) => ({
             color: '#DCF763'
         },
         '& .MuiSelect-root':{
-            color: '#DCF763'
+            color: '#DCF763',
         },
         '& .MuiButtonBase-root':{
                 color: '#DCF763',
         },
         '& .MuiButton-root': {
             borderRadius:'200px'
-        }
+        },
+        
 
     },
     button: {
         margin: theme.spacing(0.5)
+    },
+    select:{
+        color:'#DCF763',
     }
 
 }))
@@ -41,13 +45,13 @@ const GenerateMenu = ({ generateMenu }) => {
     }
 
     return (
-        <div>
+        <div className={classes.root}>
             <Container className={classes.root} maxwidth="sm">
                 <form preventDefault onSubmit={handleOnSubmit}>
                     <Grid container justify="center" spacing={10}>
                         <Grid item xs={5}>
                             <InputLabel >Number of days</InputLabel>
-                            <Select defaultValue="Days" required onChange={handleOnChange} name="numberOfDays" label="Number of days planning for" >
+                            <Select className={classes.root} defaultValue="Days" required onChange={handleOnChange} name="numberOfDays" label="Number of days planning for" >
                                 <MenuItem value={1}>One</MenuItem>
                                 <MenuItem value={2}>Two</MenuItem>
                                 <MenuItem value={3}>Three</MenuItem>
@@ -59,8 +63,7 @@ const GenerateMenu = ({ generateMenu }) => {
                         </Grid>
                         <Button
                             type="submit"
-                            cariant="contained"
-                            color="primary"
+                            
                         >
                             Generate!
                             </Button>

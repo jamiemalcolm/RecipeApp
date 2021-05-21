@@ -5,12 +5,21 @@ import IconButton from '@material-ui/core/IconButton';
 import RemoveIcon from '@material-ui/icons/Remove';
 import AddIcon from '@material-ui/icons/Add';
 import Request from '../helpers/request';
-
+import SaveIcon from '@material-ui/icons/Save';
 
 const useStyles = makeStyles((theme) => ({
     root: {
         '& .MuiTextField-root': {
-            margin: theme.spacing(0.5)
+            margin: theme.spacing(0.5),
+        },
+        '& .MuiButtonBase-root': {
+            color: '#DCF763',
+        },
+        '& .MuiFilledInput-root':{
+            color: '#DCF763'
+        },
+        '& .MuiInputLabel-root':{
+            color: '#DCF763'
         }
     },
     button: {
@@ -150,11 +159,10 @@ const RecipeForm = () => {
                 ))}
 
                 <Button className={classes.button}
-                    variant="contained"
-                    color="primary"
+                    
                     type="submit"
                 >
-                    Save!
+                    <SaveIcon/>
                     </Button>
             </form>
         </Container>

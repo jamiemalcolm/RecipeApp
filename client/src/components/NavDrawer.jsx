@@ -28,6 +28,9 @@ const useStyles = makeStyles((theme) => ({
         '& .MuiPaper-root': {
             backgroundColor: "#848C8E",
             color: '#DCF763'
+        },
+        '& .MuiSvgIcon-root': {
+            color: '#DCF763',
         }
     },
     appBar: {
